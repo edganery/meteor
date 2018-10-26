@@ -3,17 +3,18 @@
 // Import the React library
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 // Create a component
 const App = () => {
- return {
+ return (
    <div>
    React App #2
    </div>
-  };
+ );
 };
 
 
 // render tis component to the screen
-Meteor.startup {
+Meteor.startup(() => {
 ReactDOM.render (<App />, document.querySelector ('.container'));
-}
+});
