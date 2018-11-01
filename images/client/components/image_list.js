@@ -3,7 +3,7 @@
 import React from 'react';
 
 //Create our component
-const Image List = () => {
+const ImageList = () => {
   return (
     <ul>
      <li>Image Detail </li>
