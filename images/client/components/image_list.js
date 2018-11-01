@@ -5,7 +5,7 @@ import React from 'react';
 //Create our component
 const Image List = () => {
   return (
-    <url>
+    <ul>
      <li>Image Detail </li>
      </ul>
   );
