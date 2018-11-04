@@ -8,7 +8,7 @@ import ImageList from './components/image_list';
 const App = () => {
  return (
    <div>
-    <ImageList />
+    <h1>Image List </h1>
    </div>
  );
 };
