@@ -3,7 +3,7 @@
 // Import the React library
 import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from axios;
+import axios from 'axios';
 import ImageList from './components/image_list';
 
 
@@ -19,7 +19,10 @@ const App = () => {
 
 // render tis component to the screen
 Meteor.startup(() => {
-ReactDOM.render (<App />, document.querySelector ('.container'));
-axios.get('https://www.flickr.com/services/api/tos/')
-	.then(response => console.log(response));
+  ReactDOM.render (<App />, document.querySelector ('.container'));
+  axios.get('https://api.imgur.com/3/gallery/hot/viral/0', {
+    headers: {
+      Authorization: 'Bearer e85fa4b2470d724ce19af392bf3bd34fdef8a781' 
+    }  
+  }).then(response => console.log(response));
 });
