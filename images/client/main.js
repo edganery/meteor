@@ -1,15 +1,16 @@
 // Any Js in here is automatically ran for us
 
 // Import the React library
-import React, {component} from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import ImageList from './components/image_list';
 
 
 // Create a component
-class App extends component {
+class App extends Component {
  componentWillMount(){
+   // THIS IS MAGIC! NOW I HAVE OVERPOWERS!! TO LOAD ALL DATA TOGHETER BULHATCHAKA!
    console.log ('bug sobre o render fazendo o crash');
  }
 
