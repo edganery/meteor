@@ -9,6 +9,10 @@ import ImageList from './components/image_list';
 
 // Create a component
 class App extends component {
+ componentWillMount(){
+   console.log ('bug sobre o render fazendo o crash');
+ }
+
  render() {
   return (
    <div>
