@@ -12,11 +12,11 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { images: []};
+    this.state = { images: [] };
     // here brah! rem -
   }
 
- componentWillMount() {
+componentWillMount() {
    // THIS IS MAGIC! NOW I HAVE OVERPOWERS!! TO LOAD ALL DATA TOGHETER BULHATCHAKA!
    axios.get('https://api.imgur.com/3/gallery/hot/viral/0', {
      headers: {
@@ -25,15 +25,13 @@ class App extends Component {
    }).then(response => this.setState({ images: response.data.data }));
 // rem never do this-
 // this.state.images = [ {}, {} ];
-   console.log ('AQUI EM BAIXO APARECE A MAGIA');
- }
+}
 
- render() {
-   console.log(this.state.images);
+render() {
   return (
-   <div>
-    <ImageList />
-   </div>
+    <div>
+      <ImageList images={this.state.images}/>
+    </div>
   );
  }
 };
