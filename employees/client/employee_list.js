@@ -4,7 +4,7 @@ const EmployeeList = () => {
   return (
     <div>
       <div className="employee-list">
-       Employee List
+        <div>Employee List</div>
       </div>
     </div
   );
