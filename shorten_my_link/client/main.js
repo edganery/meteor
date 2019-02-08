@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Haeder from './components/haeder';
+
 const App = () => {
-    return (
-      <h1>heeeeey all</h1>
-    );
+  return (
+    <div>
+      <Haeder />
+    </div>
+  );
 };
 
 Meteor.startup(() => {
