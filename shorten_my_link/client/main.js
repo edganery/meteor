@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Haeder from './components/haeder';
 import LinkCreate from './components/link_create';
+import {Links} from '../imports/collection/links'
 
 const App = () => {
   return (
